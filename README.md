@@ -47,10 +47,10 @@ flowchart LR
 | Metric | Value |
 |---|---|
 | Ads collected in one day, 7 sources | 2,808 |
-| Filtered out before any LLM time (title, area, age, duplicates) | 2,473, each with a recorded reason |
+| Filtered out in code before any LLM time (title, area, age, duplicates) | 2,473, each with a recorded reason |
 | In the scoring queue | 335 |
-| Scored with rationale, in three sessions | 180 |
-| Of which in the high band | 0 (honest scoring: the best were 64-67, see design decisions) |
+| Read by the LLM in three sessions | 335: **160 scored** with a rationale, **175 dropped** after reading the text (wrong area, language, level, duplicates) |
+| High band (70+) | 0 of the 180 ads scored that day (including 20 from an earlier morning run): the best were 64-67, see design decisions |
 
 The spreadsheets are personal and not included. [`examples/jobs_example.xlsx`](examples/jobs_example.xlsx) is built from invented companies to show the format.
 
