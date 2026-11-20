@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+# Runtime output (queues, discards, real spreadsheets). Examples live in examples/.
+data/
+output/
+*.xlsx
+!examples/*.xlsx
+
+# Personal profile: keep the example, ignore the real one
+config/profile.yaml

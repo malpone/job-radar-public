@@ -1,0 +1,6 @@
+[
+ {"company": "Wayne Enterprises", "role": "Director of Revenue Operations", "reason": "title off-track (director or vice president)",
+  "link": "https://example.com/jobs/wayne-director-revops", "source": "Example board", "id": "ex-1"},
+ {"company": "Stark Industries", "role": "Sales Operations Analyst", "reason": "out of area: remote reserved to the United States (from the text)",
+  "link": "https://example.com/jobs/stark-sales-ops", "source": "Example board", "id": "ex-2"}
+]

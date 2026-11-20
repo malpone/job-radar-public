@@ -1,0 +1,18 @@
+{
+ "meta": {"generated_at": "2026-01-12 07:00", "sources": {"himalayas": {"collected": 3, "status": "success", "errors": []}},
+          "rules": "remote Europe; on-site within 50 km; hybrid within 100 km"},
+ "ads": [
+  {"priority": 1, "local": true, "source": "Example board", "source_id": "example", "id": "ex-100",
+   "url": "https://example.com/jobs/northwind-revops-analyst", "title": "Revenue Operations Analyst", "company": "Northwind Analytics",
+   "location": "Milan, Lombardy, Italy", "mode": "hybrid", "km_from_home": 0, "geo_reason": "hybrid at 0 km", "geo_notes": [],
+   "posted": "2026-01-12", "salary_raw": null, "contract": "Full Time", "seniority": "Mid-level", "signals": [], "local_company": false,
+   "description": "Northwind Analytics is hiring a Revenue Operations Analyst to own pipeline reporting, forecast hygiene and CRM data quality. You will work with Python and SQL, build dashboards and support the sales team. Requirements: 2+ years in a data or operations role, HubSpot administration, strong English.",
+   "description_truncated": false, "description_length": 300},
+  {"priority": 1, "local": false, "source": "Example board", "source_id": "example", "id": "ex-101",
+   "url": "https://example.com/jobs/contoso-sales-ops", "title": "Sales Operations Specialist", "company": "Contoso Cloud",
+   "location": "Europe", "mode": "remote", "km_from_home": null, "geo_reason": "remote, open to Europe", "geo_notes": [],
+   "posted": "2026-01-11", "salary_raw": "45000-55000 EUR YEAR", "contract": "Full Time", "seniority": "Senior", "signals": [], "local_company": false,
+   "description": "Own forecasting, territory data and sales reporting for a European SaaS team. 3-5 years of Sales Operations in B2B SaaS.",
+   "description_truncated": false, "description_length": 130}
+ ]
+}

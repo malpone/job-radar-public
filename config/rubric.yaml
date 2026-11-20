@@ -1,0 +1,42 @@
+# Scoring rubric: the single source of truth for both the LLM prompt (skill or API)
+# and the deterministic validator (jobradar/rubric.py). Change it here, nowhere else.
+
+criteria:                 # key: max points, in spreadsheet order (columns I..N)
+  skills: 30              # technical skills vs the profile
+  role: 25                # role and seniority fit
+  location: 15            # location, remote scope, working language
+  sector: 10              # sector and experience fit
+  contract: 10            # contract type and salary
+  other: 10               # freshness, company, clarity of requirements, queue signals
+
+bands:                    # final score -> band
+  high: 70
+  medium: 50              # below medium is "low"
+
+# A cap is applied when something blocks the candidacy no matter how good the rest is.
+# final = min(raw, cap). Caps are deliberately few and explicit; no ad-hoc subtraction.
+allowed_caps: [40, 45, 60]
+
+caps:
+  40:                     # hard blockers: always lands in the low band
+    - Required working language the candidate does not speak (fluent, native, C1, "required"),
+      or the ad is written in that language. Also cap location points at 3.
+    - Remote or on-site only in the United Kingdom (right to work needed).
+    - Location only in Ireland (also location points = 0).
+    - Remote reserved to residents of the United States.
+  45:
+    - Data engineering or AI role where SQL/data warehouse or RAG/LangChain is missing entirely.
+    - Software engineering role where the core language/stack is missing entirely.
+  60:
+    - Role built on one specific tool never used (for example a Salesforce administrator role).
+
+soft_rules:
+  - 'If the salary is not written, write "not indicated" and give half of the contract points.'
+  - 'A language that is only a plus (nice to have): subtract 5 from location points, no cap.'
+  - 'No explicit language requirement and an ad in English or Italian: no penalty, mention the risk in the gaps.'
+  - 'Do not invent requirements. If the text does not list them, say so and lower confidence.'
+  - 'Candidate count is not available on aggregator sources: write "applicants n/a".'
+
+prompt_style:
+  language: English
+  rationale_max_sentences: 3

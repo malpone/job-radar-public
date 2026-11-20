@@ -1,0 +1,58 @@
+# Example profile for a fictional candidate. Copy to config/profile.yaml (git-ignored) and edit.
+# The scoring step reads this file: it is the only place where "who is searching" lives.
+
+name: Alex Example            # not used for scoring, only for reports
+target_roles:
+  - Revenue Operations
+  - Sales Operations
+  - CRM Operations
+  - Sales Analytics
+  - Marketing Operations
+  - Business Intelligence
+stretch_track: GTM Engineering   # differentiator to grow into over 12-24 months
+not_credible_yet:
+  - RevOps Manager (people management)
+
+home:
+  city: Milan
+  lat: 45.4642
+  lon: 9.1900
+
+work_modes:
+  remote: any country in Europe
+  on_site_max_km: 50
+  hybrid_max_km: 100
+
+languages:                       # languages the candidate can work in
+  - English
+  - Italian
+language_level_note: English C1 (spoken and written)
+
+demonstrated:                    # level 2: backed by projects or work
+  - Python and data analysis
+  - B2B lead generation
+  - Applied AI and LLMs
+  - ETL and deduplication
+  - BI and reporting
+  - Market analysis
+studying:                        # partial credit only
+  - SQL
+  - Power BI
+  - HubSpot
+  - n8n
+  - Clay
+no_evidence:                     # missing core skill => cap (see rubric.yaml)
+  - Salesforce or HubSpot administration
+  - dbt
+  - BigQuery
+  - Spark or Databricks
+  - RAG with a vector store
+
+background: >
+  8 years in retail operations management (P&L, teams of 20+), business degree,
+  a data analytics certificate and a six-month B2B lead generation internship.
+
+compensation:
+  target_after_two_years_eur: 55000
+  acceptable_entry_range_eur: [38000, 50000]
+  contractor_ok: true

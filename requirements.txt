@@ -1,0 +1,17 @@
+# Python 3.10+
+requests>=2.32
+pyyaml>=6.0
+beautifulsoup4>=4.12
+lxml>=5.0
+openpyxl>=3.1
+python-dotenv>=1.0
+tenacity>=9.0
+
+# Optional: scoring through the Anthropic API (jobradar/scoring_api.py)
+anthropic>=0.40
+
+# Optional: use the operating system certificate store (corporate TLS inspection)
+truststore>=0.9
+
+# Tests
+pytest>=8.0
